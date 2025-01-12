@@ -13,10 +13,10 @@ form.addEventListener("submit", (event) => {
     event.preventDefault();
     try {
         let [resultMovie] = filterMovies(genre.value, duration.value, mood.value);
+        para.classList.add("result");
         if (resultMovie) {
-            para.classList.add("result");
             para.innerHTML = `Based on your preferences, we recommend watching 
-            <h2><a href=${resultMovie.link}>${resultMovie.title}</a></h2> — a quirky ${resultMovie.genre} film with a runtime of ${resultMovie.watchtime} minutes, perfect for a ${resultMovie.mood} mood. Enjoy this lighthearted, visually stunning movie`;
+            <h2><a href=${resultMovie.platformLink}>${resultMovie.title}</a></h2> — a quirky ${resultMovie.genre} film with a runtime of ${resultMovie.watchtime} minutes, perfect for a ${resultMovie.mood} mood. Enjoy this lighthearted, visually stunning movie`;
         } else {
             para.innerText = "Sorry, there's no movie with your preferred choices in our database"
         }
