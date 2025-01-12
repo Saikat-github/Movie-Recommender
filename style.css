@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300;400;700&display=swap');
+
+body {
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+    color: #ffffff;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #ddd;
+}
+
+
+/* Form Container Styling */
+form {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+
+/* Label Styling */
+form label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+
+/* Select Dropdown Styling */
+form select {
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background: #24243e;
+    color: #fffffff1;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+}
+
+
+form select:focus {
+    border: 1px solid #e60431;
+    outline: none;
+}
+
+
+
+form button {
+    background: #e60431;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+form button:hover {
+    opacity: 0.8;
+}
+
+
+.result {
+    border: 2px solid #e60431;
+    padding: 16px 16px;
+    width: 100%;
+    max-width: 500px;
+    margin: 10px auto;
+    border-radius: 16px;
+    background-color: #e6043134;
+    font-weight: bold;
+}
+
+
+a {
+    text-decoration: none;
+    color: #0b48c2;
+}
+
+
+.error {
+    color: red;
+    text-align: center;
+}
+
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    .result {
+        width: 90%;
+        font-size: 0.9rem;
+    }
+
+    form button {
+        font-size: 1rem;
+    }
+}
